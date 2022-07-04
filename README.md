@@ -2,7 +2,7 @@
 Implementation of our proposed Transformer-based image compression codec with adaptative sampling.
 Paper link on [Transformer-based Image Compression Codec with Adaptative Sampling](Coming soon)
 
-## Coming Soon...
+## Work in progress...
 
 * [Transformers_Unsupervised_Anomaly_Segmentation](#Transformers_Unsupervised_Anomaly_Segmentation)
   * [Requirements](#requirements)
