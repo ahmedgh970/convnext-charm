@@ -1,10 +1,10 @@
-# Transformer-based Image Compression Codec with Adaptative Sampling
-Implementation of our proposed Transformer-based image compression codec with adaptative sampling.
-Paper link on [Transformer-based Image Compression Codec with Adaptative Sampling](Coming soon)
+# Attention-based Image Compression Models with Adaptive Down-sampling
+Implementation of our proposed Attention-based image compression codecs with adaptive down-sampling.
+Paper link on [Attention-based image compression models with adaptive down-sampling](Coming soon)
 
 ## Work in progress...
 
-* [Transformers_Unsupervised_Anomaly_Segmentation](#Transformers_Unsupervised_Anomaly_Segmentation)
+* [Attention-based-image-compression-models-with-adaptive-down-sampling](#Attention-based-image-compression-models-with-adaptive-down-sampling)
   * [Requirements](#requirements)
   * [Folder Structure](#folder-structure)
   * [CLI-Usage](#cli-usage)
@@ -16,13 +16,13 @@ Paper link on [Transformer-based Image Compression Codec with Adaptative Samplin
 
 
 ## Tags
-<code>Transformers</code>, <code>Adaptative Sampling</code>, <code>Learning-based Codecs</code>, <code>Image Compression</code>, <code>TensorFlow</code>
+<code>Swin Transformer</code>, <code>ConvNeXt</code>? <code>Adaptative Down-sampling</code>, <code>Learning-based Codecs</code>, <code>Image Compression</code>, <code>TensorFlow</code>
 
 
 ## Requirements
 * <code>Python >= 3.6</code>
 
-All packages used in this repository are listed in [requirements.txt](https://github.com/ahmedgh970/Transformer-based-image-compression-codec-with-adaptative-sampling/requirements.txt).
+All packages used in this repository are listed in [requirements.txt](https://github.com/ahmedgh970/Attention-based-image-compression-models-with-adaptive-down-sampling/requirements.txt).
 To install those, run:
 ```
 pip install -r requirements.txt
@@ -31,7 +31,7 @@ pip install -r requirements.txt
 
 ## Folder Structure
   ```
-  Transformer-based-image-compression-codec-with-adaptative-sampling/
+  Attention-based-image-compression-models-with-adaptive-down-sampling/
   │
   ├── data/
   │   └── data.txt  - datasets descriptions and download link
