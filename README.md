@@ -1,6 +1,6 @@
 # Attention-based Image Compression Models with Adaptive Downsampling
 Implementation of our proposed Attention-based image compression codecs with adaptive downsampling.
-Paper link on [Attention-based image compression models with adaptive downsampling](Coming soon)
+Paper link on [Attention-based image compression models with adaptive downsampling](Coming Soon)
 
 ## Work in progress...
 
