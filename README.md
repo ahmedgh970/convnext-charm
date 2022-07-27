@@ -1,10 +1,10 @@
-# Attention-based Image Compression Models with Adaptive Down-sampling
-Implementation of our proposed Attention-based image compression codecs with adaptive down-sampling.
-Paper link on [Attention-based image compression models with adaptive down-sampling](Coming soon)
+# Attention-based Image Compression Models with Adaptive Downsampling
+Implementation of our proposed Attention-based image compression codecs with adaptive downsampling.
+Paper link on [Attention-based image compression models with adaptive downsampling](Coming soon)
 
 ## Work in progress...
 
-* [Attention-based-image-compression-models-with-adaptive-down-sampling](#Attention-based-image-compression-models-with-adaptive-down-sampling)
+* [Attention-based-image-compression-models-with-adaptive-downsampling](#Attention-based-image-compression-models-with-adaptive-downsampling)
   * [Requirements](#requirements)
   * [Folder Structure](#folder-structure)
   * [CLI-Usage](#cli-usage)
@@ -22,7 +22,7 @@ Paper link on [Attention-based image compression models with adaptive down-sampl
 ## Requirements
 * <code>Python >= 3.6</code>
 
-All packages used in this repository are listed in [requirements.txt](https://github.com/ahmedgh970/Attention-based-image-compression-models-with-adaptive-down-sampling/requirements.txt).
+All packages used in this repository are listed in [requirements.txt](https://github.com/ahmedgh970/Attention-based-image-compression-models-with-adaptive-downsampling/requirements.txt).
 To install those, run:
 ```
 pip install -r requirements.txt
@@ -31,7 +31,7 @@ pip install -r requirements.txt
 
 ## Folder Structure
   ```
-  Attention-based-image-compression-models-with-adaptive-down-sampling/
+  Attention-based-image-compression-models-with-adaptive-downsampling/
   │
   ├── data/
   │   └── data.txt  - datasets descriptions and download link
