@@ -1,10 +1,10 @@
-# Attention-based Image Compression Models with Adaptive Downsampling
-Implementation of our proposed Attention-based image compression codecs with adaptive downsampling.
-Paper link on [Attention-based image compression models with adaptive downsampling](Coming Soon)
+# Attention-Based Learning Image Compression Models with Adaptive Resolution
+Implementation of our proposed attention-based image compression codecs with adaptive downsampling.
+Paper link on [Attention-Based Learning Image Compression Models with Adaptive Resolution](Coming Soon)
 
 ## Work in progress...
 
-* [Attention-based-image-compression-models-with-adaptive-downsampling](#Attention-based-image-compression-models-with-adaptive-downsampling)
+* [Attention-Based-Learning-Image-Compression-Models-with-Adaptive-Resolution](#Attention-Based-Learning-Image-Compression-Models-with-Adaptive-Resolution)
   * [Requirements](#requirements)
   * [Folder Structure](#folder-structure)
   * [CLI-Usage](#cli-usage)
