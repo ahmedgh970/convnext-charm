@@ -1,10 +1,10 @@
-# Attention-Based Learning Image Compression Models with Adaptive Resolution
-Implementation of our proposed attention-based image compression codecs with adaptive downsampling.
-Paper link on [Attention-Based Learning Image Compression Models with Adaptive Resolution](Coming Soon)
+# ConvNeXt based Transform Coding
+Implementation of our proposed ConvNeXt-based learning image compression model.
+Paper link on [ConvNeXt-based Transform Coding](Coming Soon)
 
 ## Work in progress...
 
-* [Attention-Based-Learning-Image-Compression-Models-with-Adaptive-Resolution](#Attention-Based-Learning-Image-Compression-Models-with-Adaptive-Resolution)
+* [ConvNeXt-based-Transform-Coding](#ConvNeXt-based-Transform-Coding)
   * [Requirements](#requirements)
   * [Folder Structure](#folder-structure)
   * [CLI-Usage](#cli-usage)
@@ -16,13 +16,13 @@ Paper link on [Attention-Based Learning Image Compression Models with Adaptive R
 
 
 ## Tags
-<code>Swin Transformer</code>, <code>ConvNeXt</code>? <code>Adaptative Down-sampling</code>, <code>Learning-based Codecs</code>, <code>Image Compression</code>, <code>TensorFlow</code>
+<code>Swin Transformer</code>, <code>ConvNeXt</code>, <code>Learning-based Codecs</code>, <code>Image Compression</code>, <code>TensorFlow</code>
 
 
 ## Requirements
 * <code>Python >= 3.6</code>
 
-All packages used in this repository are listed in [requirements.txt](https://github.com/ahmedgh970/Attention-based-image-compression-models-with-adaptive-downsampling/requirements.txt).
+All packages used in this repository are listed in [requirements.txt](https://github.com/ahmedgh970/ConvNeXt-based-Transform-Coding/requirements.txt).
 To install those, run:
 ```
 pip install -r requirements.txt
@@ -31,18 +31,19 @@ pip install -r requirements.txt
 
 ## Folder Structure
   ```
-  Attention-based-image-compression-models-with-adaptive-downsampling/
-  │
-  ├── data/
-  │   └── data.txt  - datasets descriptions and download link
-  │
-  ├── models/ - Models defining, training and evaluating
-  │
-  ├── ckpts/  - Checkpoints folder
-  │
-  └── scripts/ - small utility scripts
-      ├── utils.py
-      └── ...    
+  
+ConvNeXt-based-Transform-Coding
+│
+├── data/
+│   └── data.txt  - datasets descriptions and download link
+│
+├── models/ - Models defining, training and evaluating
+│
+├── ckpts/  - Checkpoints folder
+│
+└── scripts/ - small utility scripts
+    ├── utils.py
+    └── ...    
   ```
 
 ## CLI Usage
