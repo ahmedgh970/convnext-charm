@@ -2,10 +2,12 @@
 Official implementation of [ConvNeXt-ChARM: ConvNeXt-based Transform for Efficient Neural Image Compression](https://arxiv.org/).
 
 * [ConvNeXt-ChARM](#convnext-charm)
+  * [Tags](#tags)
   * [Disclaimer & Documentation](#disclaimer-documentation)
   * [Requirements](#requirements)
   * [Folder Structure](#folder-structure)
   * [CLI-Usage](#cli-usage)
+  * [Citation](#citation)
   * [License](#license)
     
 <!-- /code_chunk_output -->
@@ -51,7 +53,7 @@ Every model can be trained and tested individually using:
 * <code>Python convnext-charm.py train</code>
 * <code>Python convnext-charm.py evaluate</code>
 
-## Citation
+## Citation
 If you use this library for research purposes, please cite:
 ```
 @inproceedings{ghorbel2023convnextcharm,
