@@ -1,58 +1,67 @@
-# ConvNeXt based Transform Coding
-Implementation of our proposed ConvNeXt-based learning image compression model.
-Paper link on [ConvNeXt-based Transform Coding](Coming Soon)
+# ConvNeXt-ChARM: ConvNeXt-based Transform for Efficient Neural Image Compression
+Official implementation of ConvNeXt-ChARM: ConvNeXt-based Transform for Efficient Neural Image Compression.
+Paper link on [ConvNeXt-ChARM: ConvNeXt-based Transform for Efficient Neural Image Compression](Coming Soon)
 
-## Work in progress...
-
-* [ConvNeXt-based-Transform-Coding](#ConvNeXt-based-Transform-Coding)
+* [ConvNeXt-ChARM](#convnext-charm)
+  * [Disclaimer & Documentation](#disclaimer-documentation)
   * [Requirements](#requirements)
   * [Folder Structure](#folder-structure)
   * [CLI-Usage](#cli-usage)
-  * [Disclaimer](#disclaimer)
-  * [Reference](#reference)
   * [License](#license)
     
 <!-- /code_chunk_output -->
 
-
 ## Tags
 <code>Swin Transformer</code>, <code>ConvNeXt</code>, <code>Learning-based Codecs</code>, <code>Image Compression</code>, <code>TensorFlow</code>
 
+## Disclaimer & Documentation
+Please do not hesitate to open an issue to inform of any problem you may find within this repository. Also, you can [email me](ahmed.ghorbel888@gmail.com) for questions or comments. 
+Refer to the [TensorFlow Compression (TFC) library](https://github.com/tensorflow/compression) to build your own ML models with end-to-end optimized data compression built in.
+Refer to the [API documentation](https://www.tensorflow.org/api_docs/python/tfc) for a complete description of the classes and functions this package implements.
 
 ## Requirements
 * <code>Python >= 3.6</code>
 
-All packages used in this repository are listed in [requirements.txt](https://github.com/ahmedgh970/ConvNeXt-based-Transform-Coding/requirements.txt).
+All packages used in this repository are listed in [requirements.txt](https://github.com/ahmedgh970/ConvNeXt-ChARM/requirements.txt).
 To install those, run:
 ```
 pip install -r requirements.txt
 ```
 
-
 ## Folder Structure
-  ```
-  
-ConvNeXt-based-Transform-Coding
+``` 
+ConvNeXt-ChARM
 │
-├── data/
-│   └── data.txt  - datasets descriptions and download link
+├── testsets/
+│   └── CLIC22/ - CLIC22 dataset
 │
-├── models/ - Models defining, training and evaluating
-│
+├── utilities/
+│   └── utils.py/ - utility scripts
+│   └── convNext.py/ - ConvNeXt block layers
+│   └── swinTransformer.py/ - Swin Transformer block layers
+|
 ├── ckpts/  - Checkpoints folder
+|
+├── results/  - Evaluation results folder
 │
-└── scripts/ - small utility scripts
-    ├── utils.py
-    └── ...    
-  ```
+└── figures/ - Documentation figures
+```
 
 ## CLI Usage
-Every model can be trained and tested individually using the scripts which are provided in the `models/*` folders.
+Every model can be trained and tested individually using:
+* <code>Python convnext-charm.py train</code>
+* <code>Python convnext-charm.py evaluate</code>
 
-## Disclaimer
-Please do not hesitate to open an issue to inform of any problem you may find within this repository.
-
-## Reference
+## Citation
+If you use this library for research purposes, please cite:
+```
+@inproceedings{ghorbel2023convnextcharm,
+  title={ConvNeXt-ChARM: ConvNeXt-based Transform for Efficient Neural Image Compression},
+  author={Ghorbel, Ahmed and Hamidouche, Wassim and Luce, Morin},
+  booktitle={},
+  year={2023}
+}
+```
 
 ## License
 This project is licensed under the MIT License. See LICENSE for more details
