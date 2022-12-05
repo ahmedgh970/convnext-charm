@@ -50,8 +50,12 @@ ConvNeXt-ChARM
 
 ## CLI Usage
 Every model can be trained and tested individually using:
-* <code>Python convnext-charm.py train</code>
-* <code>Python convnext-charm.py evaluate</code>
+```
+python convnext-charm.py train
+```
+```
+python convnext-charm.py evaluate
+```
 
 ## Citation
 If you use this library for research purposes, please cite:
