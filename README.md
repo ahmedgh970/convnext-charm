@@ -1,6 +1,5 @@
 # ConvNeXt-ChARM: ConvNeXt-based Transform for Efficient Neural Image Compression
-Official implementation of ConvNeXt-ChARM: ConvNeXt-based Transform for Efficient Neural Image Compression.
-Paper link on [ConvNeXt-ChARM: ConvNeXt-based Transform for Efficient Neural Image Compression](Coming Soon)
+Official implementation of [ConvNeXt-ChARM: ConvNeXt-based Transform for Efficient Neural Image Compression](https://arxiv.org/).
 
 * [ConvNeXt-ChARM](#convnext-charm)
   * [Disclaimer & Documentation](#disclaimer-documentation)
