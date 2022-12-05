@@ -15,7 +15,7 @@ Paper link on [ConvNeXt-ChARM: ConvNeXt-based Transform for Efficient Neural Ima
 <code>Swin Transformer</code>, <code>ConvNeXt</code>, <code>Learning-based Codecs</code>, <code>Image Compression</code>, <code>TensorFlow</code>
 
 ## Disclaimer & Documentation
-Please do not hesitate to open an issue to inform of any problem you may find within this repository. Also, you can [email me](<ahmed.ghorbel888@gmail.com>) for questions or comments. 
+Please do not hesitate to open an issue to inform of any problem you may find within this repository. Also, you can [email me](mailto:ahmed.ghorbel888@gmail.com?subject=[GitHub]) for questions or comments. 
 Refer to the [TensorFlow Compression (TFC) library](https://github.com/tensorflow/compression) to build your own ML models with end-to-end optimized data compression built in.
 Refer to the [API documentation](https://www.tensorflow.org/api_docs/python/tfc) for a complete description of the classes and functions this package implements.
 
