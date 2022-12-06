@@ -54,7 +54,9 @@ ConvNeXt-ChARM
 │   └── swinTransformer.py/       # Swin Transformer block layers
 |
 ├── results/                      # Evaluation results folder
-│
+│   └── CLIC22/ 
+│       └── ... 
+|
 └── figures/                      # Documentation figures
 ```
 
