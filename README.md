@@ -44,16 +44,14 @@ ConvNeXt-ChARM
 ├── conv-charm.py                 # Conv-ChARM Model
 ├── convnext-charm.py             # ConvNeXt-ChARM Model
 ├── swint-charm.py                # SwinT-ChARM Model
+├── utils.py                      # Utility scripts
 |
 ├── testsets/
 │   └── CLIC22/                   # CLIC22 dataset
 │
-├── utilities/
-│   └── utils.py/                 # Utility scripts
+├── layers/
 │   └── convNext.py/              # ConvNeXt block layers
 │   └── swinTransformer.py/       # Swin Transformer block layers
-|
-├── ckpts/                        # Checkpoints folder
 |
 ├── results/                      # Evaluation results folder
 │
