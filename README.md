@@ -25,8 +25,8 @@ Official TensorFlow implementation of [ConvNeXt-ChARM: ConvNeXt-based Transform 
 Please do not hesitate to open an issue to inform of any problem you may find within this repository. Also, you can [email me](mailto:ahmed.ghorbel888@gmail.com?subject=[GitHub]) for questions or comments. 
 
 ## Documentation
-* This repository is built upon the official TensorFlow implementation of [Channel-Wise Autoregressive Entropy Models for Learned Image Compression](https://ieeexplore.ieee.org/abstract/document/9190935).
-* Since we did not remove the latent residual prediction (LRP) transform, the SwinT-ChARM Tensorflow reimplementation differs from the original paper [TRANSFORMER-BASED TRANSFORM CODING](https://openreview.net/pdf?id=IDwN6xjHnK8).
+* This repository is built upon the official TensorFlow implementation of [Channel-Wise Autoregressive Entropy Models for Learned Image Compression](https://ieeexplore.ieee.org/abstract/document/9190935). This baseline is referred to as [Conv-ChARM](https://github.com/ahmedgh970/ConvNeXt-ChARM/blob/main/conv-charm.py)
+* Since we did not remove the latent residual prediction (LRP) transform, the [SwinT-ChARM](https://github.com/ahmedgh970/ConvNeXt-ChARM/blob/main/swint-charm.py) Tensorflow reimplementation differs from the original paper [TRANSFORMER-BASED TRANSFORM CODING](https://openreview.net/pdf?id=IDwN6xjHnK8).
 * Refer to the [TensorFlow Compression (TFC) library](https://github.com/tensorflow/compression) to build your own ML models with end-to-end optimized data compression built in.
 * Refer to the [API documentation](https://www.tensorflow.org/api_docs/python/tfc) for a complete classes and functions description of the TensorFlow Compression (TFC) library.
  
