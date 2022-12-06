@@ -1,12 +1,15 @@
 # ConvNeXt-ChARM: ConvNeXt-based Transform for Efficient Neural Image Compression
-Official implementation of [ConvNeXt-ChARM: ConvNeXt-based Transform for Efficient Neural Image Compression](https://arxiv.org/).
+Official TensorFlow implementation of [ConvNeXt-ChARM: ConvNeXt-based Transform for Efficient Neural Image Compression](https://arxiv.org/).
 
-* [ConvNeXt-ChARM](#convnext-charm)
+* [ConvNeXt-ChARM](convnext-charm)
   * [Tags](#tags)
-  * [Disclaimer & Documentation](#disclaimer-documentation)
+  * [Overall ConvNeXt-ChARM Framework](#overall-convnext-charm-framework)
+  * [Disclaimer](#disclaimer)
+  * [Documentation](#documentation)
   * [Requirements](#requirements)
   * [Folder Structure](#folder-structure)
   * [CLI-Usage](#cli-usage)
+  * [Rate-Distortion Coding Performance](#rate-distortion-coding-performance)
   * [Citation](#citation)
   * [License](#license)
     
@@ -15,8 +18,13 @@ Official implementation of [ConvNeXt-ChARM: ConvNeXt-based Transform for Efficie
 ## Tags
 <code>Swin Transformer</code>, <code>ConvNeXt</code>, <code>Learning-based Codecs</code>, <code>Image Compression</code>, <code>TensorFlow</code>
 
-## Disclaimer & Documentation
+## Overall ConvNeXt-ChARM Framework
+![ConvNeXt-ChARM framework](https://github.com/ahmedgh970/ConvNeXt-ChARM/figures/ConvNeXt-ChARM.pdf)
+
+## Disclaimer
 Please do not hesitate to open an issue to inform of any problem you may find within this repository. Also, you can [email me](mailto:ahmed.ghorbel888@gmail.com?subject=[GitHub]) for questions or comments. 
+
+## Documentation
 Refer to the [TensorFlow Compression (TFC) library](https://github.com/tensorflow/compression) to build your own ML models with end-to-end optimized data compression built in.
 Refer to the [API documentation](https://www.tensorflow.org/api_docs/python/tfc) for a complete description of the classes and functions this package implements.
 
@@ -33,19 +41,23 @@ pip install -r requirements.txt
 ``` 
 ConvNeXt-ChARM
 │
+├── conv-charm.py                 # Conv-ChARM Model
+├── convnext-charm.py             # ConvNeXt-ChARM Model
+├── swint-charm.py                # SwinT-ChARM Model
+|
 ├── testsets/
-│   └── CLIC22/ - CLIC22 dataset
+│   └── CLIC22/                   # CLIC22 dataset
 │
 ├── utilities/
-│   └── utils.py/ - utility scripts
-│   └── convNext.py/ - ConvNeXt block layers
-│   └── swinTransformer.py/ - Swin Transformer block layers
+│   └── utils.py/                 # Utility scripts
+│   └── convNext.py/              # ConvNeXt block layers
+│   └── swinTransformer.py/       # Swin Transformer block layers
 |
-├── ckpts/  - Checkpoints folder
+├── ckpts/                        # Checkpoints folder
 |
-├── results/  - Evaluation results folder
+├── results/                      # Evaluation results folder
 │
-└── figures/ - Documentation figures
+└── figures/                      # Documentation figures
 ```
 
 ## CLI Usage
@@ -56,6 +68,20 @@ python convnext-charm.py train
 ```
 python convnext-charm.py evaluate
 ```
+
+## Rate-Distortion coding performance
+![Rate-Distortion coding performance on KODAK](https://github.com/ahmedgh970/ConvNeXt-ChARM/figures/rd_performance.pdf)
+
+Table 1. BD-rate↓ performance of BPG (4:4:4), SwinT-ChARM, and ConvNeXt-ChARM compared to the VTM-18.0 for the four considered datasets.
+
+| Dataset | BPG444 | SwinT-ChARM | ConvNeXt-ChARM |
+| --- | --- | --- | --- |
+| Kodak   | 20.73% | -3.47%  | -4.90% |
+| Tecnick | 27.03% | -6.52%  | -7.56% |
+| JPEG-AI | 28.14% | -0.23%  | -1.17% |
+| CLIC21  | 26.54% | -5.86%  | -7.36% |
+| Average | 25.61% | -4.02%  | -5.24% |
+
 
 ## Citation
 If you use this library for research purposes, please cite:
