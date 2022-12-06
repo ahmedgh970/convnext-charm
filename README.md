@@ -16,7 +16,7 @@ Official TensorFlow implementation of [ConvNeXt-ChARM: ConvNeXt-based Transform 
 <!-- /code_chunk_output -->
 
 ## Tags
-<code>Swin Transformer</code>, <code>ConvNeXt</code>, <code>Learning-based Codecs</code>, <code>Image Compression</code>, <code>TensorFlow</code>
+<code>Swin Transformer</code> <code>ConvNeXt</code> <code>Learning-based Codecs</code> <code>Image Compression</code> <code>TensorFlow</code>
 
 ## Overall ConvNeXt-ChARM Framework
 ![ConvNeXt-ChARM framework](https://github.com/ahmedgh970/ConvNeXt-ChARM/figures/ConvNeXt-ChARM.pdf)
@@ -29,7 +29,7 @@ Refer to the [TensorFlow Compression (TFC) library](https://github.com/tensorflo
 Refer to the [API documentation](https://www.tensorflow.org/api_docs/python/tfc) for a complete description of the classes and functions this package implements.
 
 ## Requirements
-* <code>Python >= 3.6</code>
+<code>Python >= 3.6</code> <code>tensorflow_compression</code> <code>tensorflow_datasets</code> <code>tensorflow_addons</code> <code>einops</code>
 
 All packages used in this repository are listed in [requirements.txt](https://github.com/ahmedgh970/ConvNeXt-ChARM/requirements.txt).
 To install those, run:
