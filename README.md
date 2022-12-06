@@ -1,7 +1,7 @@
 # ConvNeXt-ChARM: ConvNeXt-based Transform for Efficient Neural Image Compression
 Official TensorFlow implementation of [ConvNeXt-ChARM: ConvNeXt-based Transform for Efficient Neural Image Compression](https://arxiv.org/).
 
-* [ConvNeXt-ChARM](convnext-charm)
+* [ConvNeXt-ChARM](#convnext-charm)
   * [Tags](#tags)
   * [Overall ConvNeXt-ChARM Framework](#overall-convnext-charm-framework)
   * [Disclaimer](#disclaimer)
