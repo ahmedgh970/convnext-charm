@@ -19,7 +19,7 @@ Official TensorFlow implementation of [ConvNeXt-ChARM: ConvNeXt-based Transform 
 <code>Swin Transformer</code> <code>ConvNeXt</code> <code>Learning-based Codecs</code> <code>Image Compression</code> <code>TensorFlow</code>
 
 ## Overall ConvNeXt-ChARM Framework
-![ConvNeXt-ChARM framework](https://github.com/ahmedgh970/ConvNeXt-ChARM/blob/main/figures/ConvNeXt-ChARM.pdf)
+![ConvNeXt-ChARM framework](https://github.com/ahmedgh970/ConvNeXt-ChARM/blob/main/figures/ConvNeXt-ChARM.png)
 
 ## Disclaimer
 Please do not hesitate to open an issue to inform of any problem you may find within this repository. Also, you can [email me](mailto:ahmed.ghorbel888@gmail.com?subject=[GitHub]) for questions or comments. 
