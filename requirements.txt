@@ -1,0 +1,7 @@
+tensorflow_compression
+
+einops 
+
+tensorflow_datasets
+
+tensorflow_addons
