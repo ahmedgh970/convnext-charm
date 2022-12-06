@@ -19,7 +19,7 @@ Official TensorFlow implementation of [ConvNeXt-ChARM: ConvNeXt-based Transform 
 <code>Swin Transformer</code> <code>ConvNeXt</code> <code>Learning-based Codecs</code> <code>Image Compression</code> <code>TensorFlow</code>
 
 ## Overall ConvNeXt-ChARM Framework
-![ConvNeXt-ChARM framework](https://github.com/ahmedgh970/ConvNeXt-ChARM/figures/ConvNeXt-ChARM.pdf)
+![ConvNeXt-ChARM framework](https://github.com/ahmedgh970/ConvNeXt-ChARM/blob/main/figures/ConvNeXt-ChARM.pdf)
 
 ## Disclaimer
 Please do not hesitate to open an issue to inform of any problem you may find within this repository. Also, you can [email me](mailto:ahmed.ghorbel888@gmail.com?subject=[GitHub]) for questions or comments. 
@@ -31,7 +31,7 @@ Refer to the [API documentation](https://www.tensorflow.org/api_docs/python/tfc)
 ## Requirements
 <code>Python >= 3.6</code> <code>tensorflow_compression</code> <code>tensorflow_datasets</code> <code>tensorflow_addons</code> <code>einops</code>
 
-All packages used in this repository are listed in [requirements.txt](https://github.com/ahmedgh970/ConvNeXt-ChARM/requirements.txt).
+All packages used in this repository are listed in [requirements.txt](https://github.com/ahmedgh970/ConvNeXt-ChARM/blob/main/requirements.txt).
 To install those, run:
 ```
 pip install -r requirements.txt
@@ -70,7 +70,7 @@ python convnext-charm.py evaluate
 ```
 
 ## Rate-Distortion coding performance
-![Rate-Distortion coding performance on KODAK](https://github.com/ahmedgh970/ConvNeXt-ChARM/figures/rd_performance.pdf)
+![Rate-Distortion coding performance on KODAK](https://github.com/ahmedgh970/ConvNeXt-ChARM/blob/main/figures/rd_performance.png)
 
 Table 1. BD-rate↓ performance of BPG (4:4:4), SwinT-ChARM, and ConvNeXt-ChARM compared to the VTM-18.0 for the four considered datasets.
 
