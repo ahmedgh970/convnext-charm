@@ -51,8 +51,8 @@ import tensorflow as tf
 import tensorflow_compression as tfc
 import tensorflow_datasets as tfds
  
-from utilities.utils import *
-from utilities.swinTransformer import *
+from utils import *
+from layers.swinTransformer import *
  
 
 class AnalysisTransform(tf.keras.Sequential): 
