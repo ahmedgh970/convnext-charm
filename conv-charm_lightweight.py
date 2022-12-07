@@ -178,8 +178,6 @@ class ConvChARM(tf.keras.Model):
       SliceTransform(latent_depth, num_slices) for _ in range(num_slices)]
     self.cc_scale_transforms = [
       SliceTransform(latent_depth, num_slices) for _ in range(num_slices)]  
-    self.lrp_transforms = [
-      SliceTransform(latent_depth, num_slices) for _ in range(num_slices)]
     self.hyperprior = tfc.NoisyDeepFactorized(batch_shape=[hyperprior_depth])
     
     self.build((None, None, None, 3))
@@ -258,14 +256,7 @@ class ConvChARM(tf.keras.Model):
 
       # For the synthesis transform, use rounding. Note that quantize()
       # overrides the gradient to create a straight-through estimator.
-      y_hat_slice = em_y.quantize(y_slice, loc=mu)
-      
-      # Add latent residual prediction (LRP).
-      lrp_support = tf.concat([mean_support, y_hat_slice], axis=-1)
-      lrp = self.lrp_transforms[slice_index](lrp_support)
-      lrp = 0.5 * tf.math.tanh(lrp)
-      y_hat_slice += lrp
-      
+      y_hat_slice = em_y.quantize(y_slice, loc=mu)      
       y_hat_slices.append(y_hat_slice)
 
     # Merge slices and generate the image reconstruction.
@@ -381,14 +372,8 @@ class ConvChARM(tf.keras.Model):
 
       slice_string = self.em_y.compress(y_slice, sigma, mu)
       y_strings.append(slice_string)
-      y_hat_slice = self.em_y.decompress(slice_string, sigma, mu)
       
-      # Add latent residual prediction (LRP).
-      lrp_support = tf.concat([mean_support, y_hat_slice], axis=-1)
-      lrp = self.lrp_transforms[slice_index](lrp_support)
-      lrp = 0.5 * tf.math.tanh(lrp)
-      y_hat_slice += lrp
-      
+      y_hat_slice = self.em_y.decompress(slice_string, sigma, mu)      
       y_hat_slices.append(y_hat_slice)
 
     return (x_shape, y_shape, z_shape, z_string) + tuple(y_strings)
@@ -426,14 +411,7 @@ class ConvChARM(tf.keras.Model):
       sigma = self.cc_scale_transforms[slice_index](scale_support)
       sigma = sigma[:, :y_shape[0], :y_shape[1], :]
 
-      y_hat_slice = self.em_y.decompress(y_string, sigma, loc=mu)
-      
-      # Add latent residual prediction (LRP).
-      lrp_support = tf.concat([mean_support, y_hat_slice], axis=-1)
-      lrp = self.lrp_transforms[slice_index](lrp_support)
-      lrp = 0.5 * tf.math.tanh(lrp)
-      y_hat_slice += lrp
-      
+      y_hat_slice = self.em_y.decompress(y_string, sigma, loc=mu)            
       y_hat_slices.append(y_hat_slice)
 
     # Merge slices and generate the image reconstruction.
