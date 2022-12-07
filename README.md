@@ -26,7 +26,7 @@ Please do not hesitate to open an issue to inform of any problem you may find wi
 
 ## Documentation
 * This repository is built upon the official TensorFlow implementation of [Channel-Wise Autoregressive Entropy Models for Learned Image Compression](https://ieeexplore.ieee.org/abstract/document/9190935). This baseline is referred to as [Conv-ChARM](https://github.com/ahmedgh970/ConvNeXt-ChARM/blob/main/conv-charm.py)
-* We provide light versions of the models in which we have removed the latent residual prediction (LRP) transform with latent means and scales slicing, as done in the [Tensorflow reimplementation of SwinT-ChARM](https://github.com/Nikolai10/SwinT-ChARM) from the original paper [TRANSFORMER-BASED TRANSFORM CODING](https://openreview.net/pdf?id=IDwN6xjHnK8).
+* We provide lightweight versions of the models in which we have removed the latent residual prediction (LRP) transform with latent means and scales slicing, as done in the [Tensorflow reimplementation of SwinT-ChARM](https://github.com/Nikolai10/SwinT-ChARM) from the original paper [TRANSFORMER-BASED TRANSFORM CODING](https://openreview.net/pdf?id=IDwN6xjHnK8).
 * Refer to the [TensorFlow Compression (TFC) library](https://github.com/tensorflow/compression) to build your own ML models with end-to-end optimized data compression built in.
 * Refer to the [API documentation](https://www.tensorflow.org/api_docs/python/tfc) for a complete classes and functions description of the TensorFlow Compression (TFC) library.
  
