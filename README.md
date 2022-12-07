@@ -45,8 +45,11 @@ pip install -r requirements.txt
 ConvNeXt-ChARM
 │
 ├── conv-charm.py                 # Conv-ChARM Model
+├── conv-charm_lightweight.py     # Lightweight Conv-ChARM Model
 ├── convnext-charm.py             # ConvNeXt-ChARM Model
+├── convnext-charm_lightweight.py # Lightweight ConvNeXt-ChARM Model
 ├── swint-charm.py                # SwinT-ChARM Model
+├── swint-charm_lightweight.py    # Lightweight SwinT-ChARM Model
 ├── utils.py                      # Utility scripts
 |
 ├── testsets/
