@@ -51,17 +51,10 @@ ConvNeXt-ChARM
 ├── swint-charm.py                # SwinT-ChARM Model
 ├── swint-charm_lightweight.py    # Lightweight SwinT-ChARM Model
 ├── utils.py                      # Utility scripts
-|
-├── testsets/
-│   └── CLIC22/                   # CLIC22 dataset
 │
 ├── layers/
 │   └── convNext.py/              # ConvNeXt block layers
 │   └── swinTransformer.py/       # Swin Transformer block layers
-|
-├── results/                      # Evaluation results folder
-│   └── CLIC22/ 
-│       └── ... 
 |
 └── figures/                      # Documentation figures
 ```
