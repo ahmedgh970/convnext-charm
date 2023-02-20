@@ -45,11 +45,11 @@ pip install -r requirements.txt
 ConvNeXt-ChARM
 │
 ├── conv-charm.py                 # Conv-ChARM Model
-├── conv-charm_lightweight.py     # Lightweight Conv-ChARM Model
+├── conv-charm_lrp.py             # Conv-ChARM Model with latent residual prediction (LRP) 
 ├── convnext-charm.py             # ConvNeXt-ChARM Model
-├── convnext-charm_lightweight.py # Lightweight ConvNeXt-ChARM Model
+├── convnext-charm_lrp.py         # ConvNeXt-ChARM Model with latent residual prediction (LRP) 
 ├── swint-charm.py                # SwinT-ChARM Model
-├── swint-charm_lightweight.py    # Lightweight SwinT-ChARM Model
+├── swint-charm_lrp.py            # SwinT-ChARM Model with latent residual prediction (LRP) 
 ├── utils.py                      # Utility scripts
 │
 ├── layers/
