@@ -1,7 +1,7 @@
 # ConvNeXt-ChARM: ConvNeXt-based Transform for Efficient Neural Image Compression
 Official TensorFlow implementation of [ConvNeXt-ChARM: ConvNeXt-based Transform for Efficient Neural Image Compression](https://arxiv.org/).
 
-* [ConvNeXt-ChARM](#convnext-charm)
+* [convnext-charm](#convnext-charm)
   * [Tags](#tags)
   * [Overall ConvNeXt-ChARM Framework](#overall-convnext-charm-framework)
   * [Disclaimer](#disclaimer)
@@ -19,13 +19,13 @@ Official TensorFlow implementation of [ConvNeXt-ChARM: ConvNeXt-based Transform 
 <code>Swin Transformer</code> <code>ConvNeXt</code> <code>Learning-based Codecs</code> <code>Image Compression</code> <code>TensorFlow</code>
 
 ## Overall ConvNeXt-ChARM Framework
-![ConvNeXt-ChARM framework](https://github.com/ahmedgh970/ConvNeXt-ChARM/blob/main/figures/ConvNeXt-ChARM.png)
+![ConvNeXt-ChARM framework](https://github.com/ahmedgh970/convnext-charm/blob/main/figures/ConvNeXt-ChARM.png)
 
 ## Disclaimer
 Please do not hesitate to open an issue to inform of any problem you may find within this repository. Also, you can [email me](mailto:ahmed.ghorbel888@gmail.com?subject=[GitHub]) for questions or comments. 
 
 ## Documentation
-* This repository is built upon the official TensorFlow implementation of [Channel-Wise Autoregressive Entropy Models for Learned Image Compression](https://ieeexplore.ieee.org/abstract/document/9190935). This baseline is referred to as [Conv-ChARM](https://github.com/ahmedgh970/ConvNeXt-ChARM/blob/main/conv-charm.py)
+* This repository is built upon the official TensorFlow implementation of [Channel-Wise Autoregressive Entropy Models for Learned Image Compression](https://ieeexplore.ieee.org/abstract/document/9190935). This baseline is referred to as [Conv-ChARM](https://github.com/ahmedgh970/convnext-charm/blob/main/conv-charm.py)
 * We provide lightweight versions of the models by removing the latent residual prediction (LRP) transform and slicing latent means and scales, as done in the [Tensorflow reimplementation of SwinT-ChARM](https://github.com/Nikolai10/SwinT-ChARM) from the original paper [TRANSFORMER-BASED TRANSFORM CODING](https://openreview.net/pdf?id=IDwN6xjHnK8).
 * Refer to the [TensorFlow Compression (TFC) library](https://github.com/tensorflow/compression) to build your own ML models with end-to-end optimized data compression built in.
 * Refer to the [API documentation](https://www.tensorflow.org/api_docs/python/tfc) for a complete classes and functions description of the TensorFlow Compression (TFC) library.
@@ -34,7 +34,7 @@ Please do not hesitate to open an issue to inform of any problem you may find wi
 ## Requirements
 <code>Python >= 3.6</code> <code>tensorflow_compression</code> <code>tensorflow_datasets</code> <code>tensorflow_addons</code> <code>einops</code>
 
-All packages used in this repository are listed in [requirements.txt](https://github.com/ahmedgh970/ConvNeXt-ChARM/blob/main/requirements.txt).
+All packages used in this repository are listed in [requirements.txt](https://github.com/ahmedgh970/convnext-charm/blob/main/requirements.txt).
 To install those, run:
 ```
 pip install -r requirements.txt
@@ -42,7 +42,7 @@ pip install -r requirements.txt
 
 ## Folder Structure
 ``` 
-ConvNeXt-ChARM
+convnext-charm
 │
 ├── conv-charm.py                 # Conv-ChARM Model
 ├── conv-charm_lrp.py             # Conv-ChARM Model with latent residual prediction (LRP) 
@@ -69,8 +69,6 @@ python convnext-charm.py evaluate
 ```
 
 ## Rate-Distortion coding performance
-![Rate-Distortion coding performance on KODAK](https://github.com/ahmedgh970/ConvNeXt-ChARM/blob/main/figures/rd_performance.png)
-
 Table 1. BD-rate↓ performance of BPG (4:4:4), SwinT-ChARM, and ConvNeXt-ChARM compared to the VTM-18.0 for the four considered datasets.
 
 | Dataset | BPG444 | SwinT-ChARM | ConvNeXt-ChARM |
